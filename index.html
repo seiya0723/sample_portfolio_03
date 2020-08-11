@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Msi's Portfolio</title>
+
+    <!--外部ライブラリ(Bootstrap、fontawesome、jQuery)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--CSSとJS-->
+    <script src="static/js/jquery.inview.js"></script>
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="static/css/modal.css">
+    <script src="static/js/animation.js"></script>
+    <script src="static/js/onload.js"></script>
+</head>
+<body>
+    <header class="page_title_area">
+        <video class="bg_video" src="static/media/skyview.mp4" autoplay loop muted playsinline></video>
+        <div class="bg_cover"></div>
+        <div class="page_title">Msi's Portfolio</div>
+        <div class="page_sub_title">益居 紘一朗のポートフォリオサイトへようこそ</div>
+
+        <nav class="side_menu">
+            <a href="#aboutme" class="side_menu_content"><div class="content_name">About_me</div></a>
+            <a href="#skill" class="side_menu_content"><div class="content_name">Skill</div></a>
+            <a href="#portfolio" class="side_menu_content"><div class="content_name">Portfolio</div></a>
+            <a href="#pricelist" class="side_menu_content"><div class="content_name">Price_list</div></a>
+            <a href="#contact" class="side_menu_content"><div class="content_name">Contact</div></a>
+        </nav>
+    </header>
+
+
+    <main id="mainarea" class="container">
+
+        <section id="aboutme">
+            
+            <div class="section_header_area">
+                <div class="section_header_shadow">About_me</div>
+                <div class="section_header">About_me</div>
+            </div>
+
+            <!--ここからBootstrap-->
+            <div class="row align-middle my-4">
+                <div class="col-sm-6 text-center">
+                    <img class="shadow-lg" src="static/media/msi.jpg" alt="益居 紘一朗">
+                </div>
+                <div class="col-sm-6 align-self-center">
+                    <div class="row my-2 text-center">
+                        <div class="col-4 my-1" style="font-size:1.25rem;">氏名</div><div class="col-8 my-1" style="font-size:1.25rem;">益居 紘一朗</div>
+                        <div class="col-4 my-1" style="font-size:1.25rem;">年齢</div><div class="col-8 my-1" style="font-size:1.25rem;">31歳</div>
+                        <div class="col-4 my-1" style="font-size:1.25rem;">経験</div><div class="col-8 my-1" style="font-size:1.25rem;">7年</div>
+                        <div class="col-4 my-1" style="font-size:1.25rem;">拠点</div><div class="col-8 my-1" style="font-size:1.25rem;">埼玉県 春日部市</div>
+                    </div>
+                </div>
+            </div>
+            <!--ここまでBootstrap-->
+            
+        </section>
+
+        <section id="skill">
+            
+            <div class="section_header_area">
+                <div class="section_header_shadow">Skill</div>
+                <div class="section_header">Skill</div>
+            </div>
+
+            <div id="skill_row" class="skill_row">
+                <div class="skill_col"><img src="static/media/html5.svg" alt=""></div>
+                <div class="skill_col"><img src="static/media/css3.svg" alt=""></div>
+                <div class="skill_col"><img src="static/media/js.svg" alt=""></div>
+                <div class="skill_col"><img src="static/media/python.svg" alt=""></div>
+            </div>
+
+            
+        </section>
+
+        <section id="portfolio">
+            <div class="section_header_area">
+                <div class="section_header_shadow">Portfolio</div>
+                <div class="section_header">Portfolio</div>
+            </div>
+
+
+            <div class="portfolio_content_area">
+
+
+                <div class="articles_list">
+
+
+                    <!--アニメーションをJSとCSS3で共存させるため、疑似要素不使用。.title_beforeと.continue_beforeを追加-->
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title"><div class="title_before"></div>WEB Design</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/webdesign.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue"><div class="continue_before"></div>Read_more...</div></div>
+                        </article>
+                    </div>
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title"><div class="title_before"></div>WEB Apps</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/webapp.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue"><div class="continue_before"></div>Read_more...</div></div>
+                        </article>
+                    </div>
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title"><div class="title_before"></div>AI</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/ai.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue"><div class="continue_before"></div>Read_more...</div></div>
+                        </article>
+                    </div>
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title"><div class="title_before"></div>IoT</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/iot.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue"><div class="continue_before"></div>Read_more...</div></div>
+                        </article>
+                    </div>
+
+
+                    <!-- 
+                        疑似要素使用版HTML
+                        疑似要素を使用するとJSのアニメーションは発動しない
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title">WEB Design</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/webdesign.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue">Read_more...</div></div>
+                        </article>
+                    </div>
+
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title">WEB Apps</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/webapp.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue">Read_more...</div></div>
+                        </article>
+                    </div>
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title">AI</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/ai.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue">Read_more...</div></div>
+                        </article>
+                    </div>
+                    <div class="article_frame">
+                        <article class="article">
+                            <div class="article_header"><div class="article_title">IoT</div></div>
+                            <div class="article_thumb_frame">
+                                <img class="article_thumb" src="static/media/iot.jpg" alt="thumbnail">
+                            </div>
+                            <div class="article_bottom"><div class="article_continue">Read_more...</div></div>
+                        </article>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        
+        
+        </section>
+        <section id="pricelist">
+            <div class="section_header_area">
+                <div class="section_header_shadow">Price_list</div>
+                <div class="section_header">Price_list</div>
+            </div>
+                
+            <div class="caution">※価格は目安です。価格交渉には誠意を持って応じます。予めPortfolioをご覧の上、ご注文ください。</div>
+
+            <div class="pricelist_table">
+                <div class="pc_view">
+                    <div class="table_head_row">
+                        <div class="table_head_col">Content</div>
+                        <div class="table_head_col">Small Plan</div>
+                        <div class="table_head_col">Middle Plan</div>
+                        <div class="table_head_col">Large Plan</div>
+                    </div>
+                </div>
+
+                <div class="table_body_row">
+                    <div class="table_body_col col_head">WEB design</div>
+                    <div class="table_body_col"><span class="sp_view">Small Plan : </span>￥ 50,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Middle Plan : </span>￥ 100,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Large Plan : </span>￥ 200,000~</div>
+                </div>
+                <div class="table_body_row">
+                    <div class="table_body_col col_head">WEB apps</div>
+                    <div class="table_body_col"><span class="sp_view">Small Plan : </span>￥ 100,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Middle Plan : </span>￥ 250,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Large Plan : </span>￥ 500,000~</div>
+                </div>
+                <div class="table_body_row">
+                    <div class="table_body_col col_head">AI</div>
+                    <div class="table_body_col"><span class="sp_view">Small Plan : </span>￥ 150,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Middle Plan : </span>￥ 300,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Large Plan : </span>￥ 600,000~</div>
+                </div>
+                <div class="table_body_row">
+                    <div class="table_body_col col_head">IoT</div>
+                    <div class="table_body_col"><span class="sp_view">Small Plan : </span>￥ 150,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Middle Plan : </span>￥ 300,000~</div>
+                    <div class="table_body_col"><span class="sp_view">Large Plan : </span>￥ 600,000~</div>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="contact">
+            <div class="section_header_area">
+                <div class="section_header_shadow">Contact</div>
+                <div class="section_header">Contact</div>
+            </div>
+
+            <div class="my-2">御用の方は、下記フォームよりお問い合わせください。</div>
+
+
+            <!--ここからBootstrapオンリー-->
+            <form class="my-2" action="">
+                <div class="form-row my-2">
+                    <div class="col-sm-6">
+                        <label for="contact_name1">お名前(姓):</label>
+                        <input id="contact_name1" type="text" class="form-control" maxlength="50" placeholder="(例)山田">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="contact_name2">お名前(名):</label>
+                        <input id="contact_name2" type="text" class="form-control" maxlength="50" placeholder="(例)太郎">
+                    </div>
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="contact_mail">メールアドレス:<span id="mail_valid" class="valid_text">入力されたメールアドレスは有効です</span><span id="mail_invalid" class="invalid_text">入力されたメールアドレスは無効です</span></label>
+                        <input id="contact_mail" type="text" class="form-control" maxlength="50" placeholder="(例) hogehoge@example.com ">
+                    </div>
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="contact_cate">御用件カテゴリ:</label>
+                        <select id="contact_cate" class="form-control">
+                            <option value="">御用件を選んでください</option>
+                            <option value="1">仕事の依頼</option>
+                            <option value="2">仕事の進捗状況について</option>
+                            <option value="3">納品物の不具合報告</option>
+                            <option value="4">仕事のキャンセル</option>
+                            <option value="5">このサイトについての質問・要望</option>
+                            <option value="6">その他の質問・要望等</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="contact_main">本文:</label>
+                        <textarea id="contact_main" class="form-control" rows="10" placeholder="ここにお問い合わせ内容を記入してください。"></textarea>
+                    </div>
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <input id="contact_submit" class="form-control" type="button" value="送信">
+                    </div>
+                </div>
+            </form>
+            <!--ここまでBootstrapオンリー-->
+        </section>
+    </main>
+
+
+    <!-- モーダルダイアログ -->
+<div id="modal">
+    <div id="modal_content" class="container">
+        <div id="skill_title" class="skill_title">Python</div>
+        <div class="row">
+            <div class="col-sm-4 text-center align-self-center mb-2">
+                <img id="skill_icon" class="skill_icon" src="static/media/python.svg" alt="">
+            </div>
+            <div class="col-sm-8 align-self-center mb-2">
+                <div class="row"><div class="col-6 skill_explain">Level</div><div id="skill_level" class="col-6 skill_vol"></div></div>
+                <div class="row"><div class="col-6 skill_explain">Usage</div><div id="skill_usage" class="col-6 skill_vol"></div></div>
+            </div>
+               
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
